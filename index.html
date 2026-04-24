@@ -2,135 +2,59 @@
 <html>
 <head>
   <title>Irsamcloud</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: Arial; margin: 0; background: #f5f5f5; }
-    .header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
+    body { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; }
+    .header { background: #e62e04; color: white; padding: 20px; text-align: center; }
+    .header h1 { margin: 0; font-size: 28px; }
+    .header p { margin: 5px 0 0 0; font-size: 14px; }
     .products { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; gap: 20px; }
-    .card { background: white; width: 250px; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px #ccc; }
-    .card img { width: 100%; height: 200px; object-fit: cover; border-radius: 5px; }
-    .price { color: green; font-size: 20px; font-weight: bold; }
-    .btn { background: #27ae60; color: white; border: none; padding: 10px; width: 100%; margin-top: 10px; cursor: pointer; border-radius: 5px; }
-    .btn:hover { background: #219a52; }
+    .card { background: white; width: 280px; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .card img { width: 100%; height: 220px; object-fit: cover; border-radius: 5px; }
+    .card h3 { margin: 10px 0 5px 0; font-size: 18px; color: #333; }
+    .card p { margin: 5px 0; color: #666; font-size: 14px; }
+    .price { color: #e62e04; font-size: 22px; font-weight: bold; margin: 10px 0; }
+    .btn { background: #e62e04; color: white; border: none; padding: 12px; width: 100%; margin-top: 10px; cursor: pointer; border-radius: 5px; text-decoration: none; display: block; text-align: center; font-weight: bold; font-size: 16px; }
+    .btn:hover { background: #c52803; }
+    .tag { background: #ff6a00; color: white; padding: 4px 10px; border-radius: 3px; font-size: 12px; display: inline-block; margin-bottom: 8px; }
   </style>
 </head>
 <body>
   <div class="header">
     <h1>Irsamcloud Store</h1>
-    <p>WhatsApp par order karein: 03228241585</p>
+    <p>Best AliExpress Deals - Free Shipping to Pakistan</p>
   </div>
 
   <div class="products">
+    <!-- Product 1: Magnetic Ear Ring Cliff - Rs.345 -->
     <div class="card">
-      <img src="https://via.placeholder.com/250x200" alt="Product 1">
-      <h3>Mens Nike Shoes 1</h3>
-      <p>Premium quality sports shoes. Light weight aur comfortable.</p>
-      <p class="price">Rs. 1500</p>
-      <button class="btn" onclick="order('Mens Nike Shoes 1', 1500)">Order Karein</button>
+      <span class="tag">Hot Deal</span>
+      <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400" alt="Magnetic Ear Ring Cliff">
+      <h3>Magnetic Ear Ring Cliff</h3>
+      <p>No piercing needed. Zircon crystal. Stylish design for women.</p>
+      <p class="price">Rs. 345</p>
+      <a href="https://rzekl.com/g/1e8d1144943e45dabc6416525dc3e8/?ulp=https://a.aliexpress.com/_c38K8Hg3" target="_blank" class="btn">Buy on AliExpress</a>
     </div>
 
+    <!-- Product 2: Summer Blouse - Rs.3754 -->
     <div class="card">
-      <img src="https://via.placeholder.com/250x200" alt="Product 2">
-      <h3>Wireless Earbuds</h3>
-      <p>Best sound quality. 8 ghante battery backup.</p>
-      <p class="price">Rs. 2500</p>
-      <button class="btn" onclick="order('Wireless Earbuds', 2500)">Order Karein</button>
+      <span class="tag">New Arrival</span>
+      <img src="https://images.unsplash.com/photo-1554568218-0f1715e72254?w=400" alt="Summer Blouse">
+      <h3>Summer Blouse</h3>
+      <p>V-neck lace design. Breathable fabric. Perfect for summer.</p>
+      <p class="price">Rs. 3,754</p>
+      <a href="https://rzekl.com/g/1e8d1144943e45dabc6416525dc3e8/?ulp=https://a.aliexpress.com/_c4PgvxuT" target="_blank" class="btn">Buy on AliExpress</a>
     </div>
 
+    <!-- Product 3: ROCOREN Ear Buds - Rs.4279 -->
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400" alt="Product 3">
-      <h3>Stylish Shoes</h3>
-      <p>Aramdeh aur mazboot shoes. Roz ke liye best.</p>
-      <p class="price">Rs. 2200</p>
-      <button class="btn" onclick="order('Stylish Shoes', 2200)">Order Karein</button>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400" alt="Product 4">
-      <h3>Smart Watch</h3>
-      <p>Fitness tracking, heart rate monitor. Waterproof.</p>
-      <p class="price">Rs. 3500</p>
-      <button class="btn" onclick="order('Smart Watch', 3500)">Order Karein</button>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400" alt="Product 5">
-      <h3>Bluetooth Headphones</h3>
-      <p>Noise cancellation. 20 ghante battery life.</p>
-      <p class="price">Rs. 4000</p>
-      <button class="btn" onclick="order('Bluetooth Headphones', 4000)">Order Karein</button>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=400" alt="Product 6">
-      <h3>Leather Wallet</h3>
-      <p>Original leather. Multiple card slots.</p>
-      <p class="price">Rs. 1200</p>
-      <button class="btn" onclick="order('Leather Wallet', 1200)">Order Karein</button>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400" alt="Product 7">
-      <h3>Ladies Handbag</h3>
-      <p>Stylish aur spacious. Party wear ke liye perfect.</p>
-      <p class="price">Rs. 2800</p>
-      <button class="btn" onclick="order('Ladies Handbag', 2800)">Order Karein</button>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400" alt="Product 8">
-      <h3>Sunglasses</h3>
-      <p>UV protection. Trendy design.</p>
-      <p class="price">Rs. 900</p>
-      <button class="btn" onclick="order('Sunglasses', 900)">Order Karein</button>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=400" alt="Product 9">
-      <h3>Running Shoes</h3>
-      <p>Jogging ke liye best. Soft sole.</p>
-      <p class="price">Rs. 3200</p>
-      <button class="btn" onclick="order('Running Shoes', 3200)">Order Karein</button>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400" alt="Product 10">
-      <h3>Power Bank 10000mAh</h3>
-      <p>Fast charging. 2 USB ports.</p>
-      <p class="price">Rs. 1800</p>
-      <button class="btn" onclick="order('Power Bank 10000mAh', 1800)">Order Karein</button>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400" alt="Product 11">
-      <h3>Mobile Cover</h3>
-      <p>Shockproof. Sab models available.</p>
-      <p class="price">Rs. 500</p>
-      <button class="btn" onclick="order('Mobile Cover', 500)">Order Karein</button>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1609081219090-a6d81d3085bf?w=400" alt="Product 12">
-      <h3>Perfume</h3>
-      <p>Long lasting fragrance. 100ml.</p>
-      <p class="price">Rs. 1600</p>
-      <button class="btn" onclick="order('Perfume', 1600)">Order Karein</button>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=400" alt="Product 13">
-      <h3>Digital Watch</h3>
-      <p>Water resistant. 1 year warranty.</p>
-      <p class="price">Rs. 1100</p>
-      <button class="btn" onclick="order('Digital Watch', 1100)">Order Karein</button>
+      <span class="tag">50% OFF</span>
+      <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400" alt="ROCOREN Ear Buds">
+      <h3>ROCOREN Ear Buds</h3>
+      <p>LED Display. Active Noise Cancellation. Bluetooth 5.4. 40H Battery.</p>
+      <p class="price">Rs. 4,279</p>
+      <a href="https://rzekl.com/g/1e8d1144943e45dabc6416525dc3e8/?ulp=https://a.aliexpress.com/_c4MGpdIB" target="_blank" class="btn">Buy on AliExpress</a>
     </div>
   </div>
-
-  <script>
-    function order(name, price) {
-      let number = "923228241585";
-      let msg = `Salam! Mujhe ye product chahiye:%0A%0AProduct: ${name}%0APrice: Rs. ${price}`;
-      window.open(`https://wa.me/${number}?text=${msg}`, '_blank');
-    }
-  </script>
 </body>
 </html>
